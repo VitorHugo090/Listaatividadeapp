@@ -1,5 +1,4 @@
-<button (click)="processClick()">Teste de botao</button>
-
-<label >input test</label>
-<input value="2" [(ngModel)]="myBindingProperty"/>
-<span>{{myBindingProperty}}</span>
+<div style="margin-top: 10px;  border: 1px solid black; ">
+    <h1 *ngIf="mostrarTitulo">Isso é um teste</h1>
+    <button (click)="botaoStatusDeTitulo()" >{{ TituloBotao ? tirarbotao:mostrarbotao}}</button>
+</div>
