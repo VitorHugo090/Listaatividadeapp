@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class TestComponent  {
 
+  public items = [
+    {description: 'Item 1', id: 1},
+    {description: 'Item 2', id: 2},
+    {description: 'Item 3', id: 3},
+    {description: 'Item 4', id: 4}
+  ]
   public mostrarTitulo = true;
   mostrarbotao: string = "Mostrar titulo";
   tirarbotao: string = "tirar titulo"

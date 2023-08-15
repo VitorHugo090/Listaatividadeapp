@@ -1,0 +1,6 @@
+#footereditor{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
