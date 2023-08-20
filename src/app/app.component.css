@@ -14,3 +14,7 @@ a{
 a:hover{
     font-size: 18px;
 }
+mat-list-item{
+    height: 200px;
+}
+
