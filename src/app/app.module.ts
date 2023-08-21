@@ -10,6 +10,8 @@ import { TestComponent } from './test/test.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from './material.module';
+import { HomeComponent } from './home/home.component';
+import { PagenotFoundComponent } from './pagenot-found/pagenot-found.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { MaterialModule } from './material.module';
     CategoryComponent,
     TestComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    PagenotFoundComponent
   ],
   imports: [
     FormsModule,

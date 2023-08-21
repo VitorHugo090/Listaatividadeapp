@@ -1,26 +1,27 @@
-
-
 <div class="main-container">
 
-    <app-header [sidenav]="sidenav"></app-header>
-    <mat-sidenav-container>
+    <app-header [sideNavBar]="sidenav"></app-header>
+
+    <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #sidenav class="w-10p">
 
       <mat-list> 
-      <mat-list-item (click)="sidenav.toggle()">
-        <a href="/"><mat-icon>home</mat-icon></a>
-        <a href="/"><mat-icon>search</mat-icon></a>
-        <a href="/"><mat-icon>add</mat-icon></a>
-        <a href="/"><mat-icon>manage_search</mat-icon></a>
+      <mat-list-item >
+        <a class="ml-15" href="/"><mat-icon>home</mat-icon></a>
+        <a class="ml-15" href="/"><mat-icon>category</mat-icon></a>
        </mat-list-item>
       </mat-list>
       
     </mat-sidenav>
+    
     <mat-sidenav-content>
-        <h1>Aplicação de teste udemy</h1>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-  <router-outlet></router-outlet>
   
-  <app-footer></app-footer>
+      <router-outlet></router-outlet>
+   
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+<app-footer></app-footer>
 </div>
