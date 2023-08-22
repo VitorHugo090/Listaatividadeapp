@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
 import { PagenotFoundComponent } from './pagenot-found/pagenot-found.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { PagenotFoundComponent } from './pagenot-found/pagenot-found.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule, 
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

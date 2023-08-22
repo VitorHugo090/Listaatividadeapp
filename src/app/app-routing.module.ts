@@ -7,8 +7,8 @@ import { CategoryComponent } from './category/category.component';
 
 const routes: Routes = [
   { path: '', component:  HomeComponent},
+  {path: 'categoria', component: CategoryComponent},
   { path: '**', component: PagenotFoundComponent },
-  {path: 'categoria', component: CategoryComponent}
 ];
 
 @NgModule({
