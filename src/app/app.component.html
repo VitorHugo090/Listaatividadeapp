@@ -1,27 +1,31 @@
 <div class="main-container">
-
-    <app-header [sideNavBar]="sidenav"></app-header>
-
-    <mat-sidenav-container class="sidenav-container">
+  <app-header [sideNavBar]="sidenav"></app-header>
+ 
+  <mat-sidenav-container class="sidenav-container">
+ 
     <mat-sidenav #sidenav class="w-10p">
-
-      <mat-list> 
-      <mat-list-item >
-        <a class="ml-15" href="/"><mat-icon>home</mat-icon></a>
-        <a class="ml-15" href="/"><mat-icon>category</mat-icon></a>
-       </mat-list-item>
+      <mat-list>
+        <mat-list-item>
+          <mat-icon>home</mat-icon>
+          <span class="ml-10"> <a [routerLink]="['/']" (click)="sidenav.toggle()">Home</a> </span>
+        </mat-list-item>
+ 
+        <mat-divider></mat-divider>
+ 
+        <mat-list-item>
+          <mat-icon>category</mat-icon>
+          <span class="ml-10"> <a [routerLink]="['/categoria']" (click)="sidenav.toggle()">Category</a> </span>
+        </mat-list-item>
       </mat-list>
-      
     </mat-sidenav>
-    
+ 
     <mat-sidenav-content>
-  
-      <router-outlet></router-outlet>
-   
+ 
+     <router-outlet></router-outlet>
+ 
     </mat-sidenav-content>
-</mat-sidenav-container>
-
-
-
-<app-footer></app-footer>
+ 
+  </mat-sidenav-container>
+ 
+  <app-footer></app-footer>
 </div>

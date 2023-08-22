@@ -29,7 +29,7 @@ import { PagenotFoundComponent } from './pagenot-found/pagenot-found.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
