@@ -13,6 +13,7 @@ import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
 import { PagenotFoundComponent } from './pagenot-found/pagenot-found.component';
 import { MatCardModule } from '@angular/material/card';
+import { DialogComponent } from './dialog/dialog.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MatCardModule } from '@angular/material/card';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    PagenotFoundComponent
+    PagenotFoundComponent,
+    DialogComponent
   ],
   imports: [
     FormsModule,
