@@ -4,9 +4,9 @@
             <p>{{dialogMsg}}</p>
          </mat-card-content>   
     </mat-card>
-    <mat-card-actions>
-        <button mat-raised-button color="warn">{{leftButtonlabel}}</button>
-        <button mat-raised-button color="warn">{{leftButtonlabel}}</button>
+    <mat-card-actions class="flx-center-row flx-evely">
+        <button mat-raised-button (click)="clickedleftbutton()" color="warn">{{leftButtonlabel}}</button>
+        <button mat-raised-button (click)="clickedrightbutton()" color="warn">{{rightButtonlabel}}</button>
     </mat-card-actions>
 
 </div>
