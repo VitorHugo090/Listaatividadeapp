@@ -1,5 +1,6 @@
+import { ModaleditComponent } from './modaledit/modaledit.component';
 import { FooterComponent } from './footer/footer.component';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { PagenotFoundComponent } from './pagenot-found/pagenot-found.component';
 import { MatCardModule } from '@angular/material/card';
 import { DialogComponent } from './dialog/dialog.component';
+import { MatInput, MatInputModule } from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -25,7 +28,8 @@ import { DialogComponent } from './dialog/dialog.component';
     FooterComponent,
     HomeComponent,
     PagenotFoundComponent,
-    DialogComponent
+    DialogComponent, 
+    ModaleditComponent
   ],
   imports: [
     FormsModule,
@@ -33,7 +37,8 @@ import { DialogComponent } from './dialog/dialog.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule, 
-    MatCardModule
+    MatCardModule, 
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

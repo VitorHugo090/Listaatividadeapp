@@ -3,6 +3,8 @@ import { MatCardModule } from '@angular/material/card';
 import { Category } from '../_models/category';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
+import { TestComponent } from '../test/test.component';
+import { ModaleditComponent } from '../modaledit/modaledit.component';
 
 export const CATEGORY_DATA = [
   {name: 'Educação', guid: 'aaa-bbb-ccc-ddd'},
@@ -26,8 +28,8 @@ constructor(private dialog: MatDialog){}
   public dataSource: Category[] = CATEGORY_DATA;
 
   public editarCategory(category: Category){
-
-    alert("Olá botao editar testado");
+      this.dialog.open(ModaleditComponent,{})
+    
 
   }
 
@@ -47,7 +49,9 @@ constructor(private dialog: MatDialog){}
   }
 
  public createNewCategory(){
-  alert("Olá botao criar testado");
+  this.dialog.open(TestComponent, {
+    
+  });
+}
 
  }
-}

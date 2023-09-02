@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
+
 export class TestComponent  {
 
   public items = [
@@ -29,3 +31,4 @@ export class TestComponent  {
   }
 
 }
+

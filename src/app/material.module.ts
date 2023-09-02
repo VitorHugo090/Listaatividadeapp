@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
@@ -8,6 +8,7 @@ import { MatDivider } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatListModule,
     MatCardModule,
     MatTableModule,
-    MatDialogModule
+    MatDialogModule, 
+    MatInputModule
 
   ],
   exports: [
@@ -30,7 +32,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatListModule,
     MatDivider,
     MatTableModule,
-    MatDialogModule
-  ]
+    MatDialogModule,
+    MatInputModule
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class MaterialModule { }
