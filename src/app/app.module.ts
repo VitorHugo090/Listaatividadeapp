@@ -1,4 +1,4 @@
-import { ModaleditComponent } from './modaledit/modaledit.component';
+import { ModaleditComponent } from './modaleditcategory/modaledit.component';
 import { FooterComponent } from './footer/footer.component';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CategoryComponent } from './category/category.component';
 import { TestComponent } from './test/test.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
@@ -17,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ModalnewcategoryComponent } from './modalnewcategory/modalnewcategory.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     HomeComponent,
     PagenotFoundComponent,
     DialogComponent, 
-    ModaleditComponent
+    ModaleditComponent, 
+    ModalnewcategoryComponent
   ],
   imports: [
     FormsModule,
@@ -38,7 +40,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     BrowserAnimationsModule,
     MaterialModule, 
     MatCardModule, 
-    MatInputModule
+    MatInputModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

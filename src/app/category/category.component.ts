@@ -4,7 +4,8 @@ import { Category } from '../_models/category';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { TestComponent } from '../test/test.component';
-import { ModaleditComponent } from '../modaledit/modaledit.component';
+import { ModaleditComponent } from '../modaleditcategory/modaledit.component';
+import { ModalnewcategoryComponent } from '../modalnewcategory/modalnewcategory.component';
 
 export const CATEGORY_DATA = [
   {name: 'Educação', guid: 'aaa-bbb-ccc-ddd'},
@@ -27,8 +28,9 @@ constructor(private dialog: MatDialog){}
   public displayedColumns: string[] = ['id', 'name', 'actions'];
   public dataSource: Category[] = CATEGORY_DATA;
 
-  public editarCategory(category: Category){
-      this.dialog.open(ModaleditComponent,{})
+  public editarCategory(inputCategory: Category){
+    this.dialog.open(ModaleditComponent, {disableClose: true, data: { editableCategory : inputCategory  }}).afterClosed().subscribe()
+    
     
 
   }
@@ -49,7 +51,7 @@ constructor(private dialog: MatDialog){}
   }
 
  public createNewCategory(){
-  this.dialog.open(TestComponent, {
+  this.dialog.open(ModalnewcategoryComponent, {
     
   });
 }
