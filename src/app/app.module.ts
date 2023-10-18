@@ -1,4 +1,4 @@
-import { ModaleditComponent } from './modaleditcategory/modaledit.component';
+import { ModaleditComponent } from './category-edit/modaledit.component';
 import { FooterComponent } from './footer/footer.component';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +17,8 @@ import { MatCardModule } from '@angular/material/card';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { ModalnewcategoryComponent } from './modalnewcategory/modalnewcategory.component';
+import { ModalnewcategoryComponent } from './category-form/modalnewcategory.component';
+import { CategoryformComponent } from './categoryform/categoryform.component';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import { ModalnewcategoryComponent } from './modalnewcategory/modalnewcategory.c
     PagenotFoundComponent,
     DialogComponent, 
     ModaleditComponent, 
-    ModalnewcategoryComponent
+    ModalnewcategoryComponent, CategoryformComponent
   ],
   imports: [
     FormsModule,
